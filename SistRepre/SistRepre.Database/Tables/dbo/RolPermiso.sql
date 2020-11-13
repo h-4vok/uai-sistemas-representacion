@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[RolPermiso]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
+	PermisoId INT NOT NULL,
+	RolId INT NOT NULL,
+
+	FOREIGN KEY (PermisoId) REFERENCES Permiso,
+	FOREIGN KEY (RolId) REFERENCES Rol
+)

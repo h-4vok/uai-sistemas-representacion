@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Rol]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
+	Codigo NVARCHAR(50),
+	Nombre NVARCHAR(100)
+)
